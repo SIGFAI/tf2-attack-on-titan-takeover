@@ -1,0 +1,121 @@
+{
+  "id": "sigf/tf2-attack-on-titan-takeover",
+  "version": "1.0.0",
+  "name": "Attack on Titan Takeover",
+  "tagline": "Bring Attack on Titan into the game in the most visible and funny way. The change shows in the first 30 seconds of play.",
+  "kind": "mashup",
+  "games": [
+    {
+      "game": "tf2",
+      "role": "host",
+      "engine": "Team Fortress 2 (Source, 64 bits) + VScript (Squirrel)",
+      "apps": {
+        "steam": "440"
+      }
+    },
+    {
+      "game": "attackontitan",
+      "role": "guest",
+      "label": "Attack on Titan",
+      "canonical": false
+    }
+  ],
+  "requires": [],
+  "install": [
+    {
+      "game": "tf2",
+      "strategy": "profile",
+      "files": [
+        {
+          "src": "tf2-attack-on-titan-takeover.zip",
+          "dst": "{game}/tf/custom/sigf_attack_on_titan_takeover",
+          "unpack": true,
+          "contents": [
+            {
+              "path": "scripts/vscripts/sigf_demo.nut",
+              "sha256": "49ebf97f70512bc5af0f1e01d162ffd4d6f4b524d943ef9c2aee101d56d296e5"
+            },
+            {
+              "path": "scripts/vscripts/sigf_mod.nut",
+              "sha256": "35fb0dd9b004d1c7ea9c9127322da8d45454a57ebb4db5ea1c8006a4c1c92232"
+            }
+          ],
+          "url": "https://github.com/SIGFAI/tf2-attack-on-titan-takeover/releases/download/v1.0.0/tf2-attack-on-titan-takeover.zip",
+          "sha256": "cee284b7b316a90add293e1a68bfa6dd4da437a961e251aee2f7dfe6038b9d51",
+          "size": 4585
+        },
+        {
+          "src": "tf2-attack-on-titan-takeover-game-kit.zip",
+          "dst": "{game}/tf/custom/sigf_kit",
+          "unpack": true,
+          "contents": [
+            {
+              "path": "cfg/sigf_server.cfg",
+              "sha256": "ac6e43c9f1240fc9fa574be5aeeec813c7eb888ad1ac0c9e31d047e2df2c35ea"
+            },
+            {
+              "path": "scripts/vscripts/mapspawn.nut",
+              "sha256": "e7f32c2c316ec8f918c981e3611386d0b554a03135ba5b7daf6c3bd5109e6d05"
+            },
+            {
+              "path": "scripts/vscripts/sigf_bricks.nut",
+              "sha256": "c2eb380bb45207e2d854c0e7e92eba7db013b11f332debf8accfafa331362344"
+            },
+            {
+              "path": "scripts/vscripts/sigf_lib.nut",
+              "sha256": "714a90211d747e98594f0f7b69ec8ad90a1bd8e1d81388570dbc7896b38b8eba"
+            },
+            {
+              "path": "scripts/vscripts/sigf_pilot.nut",
+              "sha256": "a611fa1860fe769955c2efe7ec4e3748895990f7c041682e735616e564ed4d63"
+            }
+          ],
+          "url": "https://github.com/SIGFAI/tf2-attack-on-titan-takeover/releases/download/v1.0.0/tf2-attack-on-titan-takeover-game-kit.zip",
+          "sha256": "eb87ff199dbcf22d46339f22338d2f38d503bb1a125531b27264572f40320a62",
+          "size": 9584
+        }
+      ]
+    }
+  ],
+  "launch": [
+    {
+      "game": "tf2",
+      "args": [
+        "-game",
+        "tf",
+        "-insecure"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "name": "tf2-attack-on-titan-takeover.zip",
+      "url": "https://github.com/SIGFAI/tf2-attack-on-titan-takeover/releases/download/v1.0.0/tf2-attack-on-titan-takeover.zip",
+      "sha256": "cee284b7b316a90add293e1a68bfa6dd4da437a961e251aee2f7dfe6038b9d51",
+      "size": 4585
+    },
+    {
+      "name": "tf2-attack-on-titan-takeover-game-kit.zip",
+      "url": "https://github.com/SIGFAI/tf2-attack-on-titan-takeover/releases/download/v1.0.0/tf2-attack-on-titan-takeover-game-kit.zip",
+      "sha256": "eb87ff199dbcf22d46339f22338d2f38d503bb1a125531b27264572f40320a62",
+      "size": 9584
+    }
+  ],
+  "source": {
+    "repo": "https://github.com/SIGFAI/tf2-attack-on-titan-takeover",
+    "license": "MIT"
+  },
+  "media": {
+    "clip": "https://sigf.ai/clips/2026-10-09-f3e8e754.mp4"
+  },
+  "built_by": {
+    "agent": "SIGF",
+    "model": "claude-opus-5.5"
+  },
+  "idea_by": "team",
+  "kit": {
+    "id": "tf2",
+    "status": "draft"
+  },
+  "built_at": "2026-10-09T04:31:49.622Z"
+}
