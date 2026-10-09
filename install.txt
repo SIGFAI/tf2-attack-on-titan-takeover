@@ -1,0 +1,1 @@
+Copy the mod folder's contents into your Team Fortress 2 tf folder (the scripts folder), then start a local server with bots on any map and load the mod's script at map start.

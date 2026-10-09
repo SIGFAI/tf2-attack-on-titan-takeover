@@ -1,0 +1,6 @@
+Moments the clip must show:
+[x] 1. A normal bot grows into a giant Titan with a roar and the caption "A TITAN APPEARS!"
+[x] 2. The player shoots the huge Titan with TF2 weapons; blood hits show on it
+[x] 3. ODM gear: a grapple wire flies to the Titan's nape and the blade slice lands (TF2 movement + damage)
+[x] 4. The Survey Corps (green-cloaked RED bots) swarm the Titan with wires
+[ ] 5. Titan dies: steam bursts, ground shake, "TITAN SLAIN!" caption and the killer heals (seen as caption, bursts only partly in frame)
